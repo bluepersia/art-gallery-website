@@ -1,10 +1,13 @@
-import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './pages/Home/header';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes></Routes>
+      <Routes>
+        <Route path='/' element={<Header />}></Route>
+      </Routes>
     </BrowserRouter>
   );
 }

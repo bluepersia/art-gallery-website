@@ -6,12 +6,20 @@ $color-DarkGrey: #444444;
 
 body 
 {
-    font-family: "Big Shoulders Display", sans-serif;;
+    font-family: "Big Shoulders Display", sans-serif;
+    margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6
+{
+    text-transform: uppercase;
+    line-height: .9em;
+}
 
 p {
     font-family: "Outfit", sans-serif;
+    line-height: 1.6;
+    color:$color-DarkGrey;
 }
 
 
@@ -25,4 +33,15 @@ p {
 
 * :last-child {
     margin-bottom: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+@media (min-width:1440px)
+{
+    html {
+        font-size: 22px;
+    }
 }
