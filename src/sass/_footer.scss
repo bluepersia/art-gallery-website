@@ -16,6 +16,40 @@
         color: $color-White;
         font-size: 18px;
     }
+
+    &--light 
+    {
+        background-color: $color-Gold;
+        color:$color-Black;
+
+        .footer__body 
+        {
+            color: $color-Black
+        }
+
+        .social 
+        {  
+
+            path 
+            {
+                fill: $color-Gold;
+            }
+
+            &__item
+            {
+                path 
+                {
+                    fill: $color-Black;
+                }
+                &:hover{
+                    path 
+                    {
+                        fill: $color-White;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -25,6 +59,11 @@
     padding-left: 0;
     display: flex;
     gap:1.11rem;
+
+    &__item:hover path 
+    {
+        fill: $color-Gold;
+    }
 }
 
 @media (min-width: 768px)

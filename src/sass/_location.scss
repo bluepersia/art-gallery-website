@@ -1,0 +1,140 @@
+
+
+.location 
+{
+
+    &__map
+    {
+        &-container
+        {
+            position: relative;
+        }
+        &-tablet, &-desktop
+        {
+            display: none;
+        }
+
+        &-mobile
+        {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__btn
+    {
+        position: absolute;
+        left:0px;
+        top:0px;
+    }
+    
+
+    &__content 
+    {
+        background-color: $color-Black;
+        color: $color-White;
+        padding: 2.66rem 4.2% 3.11rem;
+    }
+
+    &__title 
+    {
+        font-size: 2.77rem;
+    }
+
+    &__street
+    {
+        font-size:1.77rem;
+        color: $color-Gold;
+    }
+    &__address, &__description
+    {
+        color: $color-White;
+    }
+}
+
+
+@media (min-width:768px)
+{
+    .location {
+
+        &__map
+        {
+            &-mobile
+            {
+                display: none;
+            }
+
+            &-tablet 
+            {
+                display: block;
+                width: 100%;
+            }
+        }
+        &__btn
+        {
+            margin-left: 5.2%;
+        }
+
+        &__title
+        {
+            width: 20.3%;
+            font-size: 3rem;
+        }
+        &__content 
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 4.8rem 5.2%;
+
+            &__content 
+            {
+                width: 57.7%;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1440px)
+{
+    .location
+    {
+        &__map
+        {
+            &-tablet 
+            {
+                display: none;
+            }
+
+            &-desktop
+            {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &__btn
+        {
+            margin-left: 11.4%;
+        }
+
+        &__title
+        {
+            font-size: 3.18rem;
+        }
+
+        &__street
+        {
+            font-size: 1.63rem;
+        }
+
+        &__content
+        {
+            padding: 4.72rem 11.4% 5.8rem;
+            &__content 
+            {
+                width: 48.6%;
+            }
+        }
+    }
+}
