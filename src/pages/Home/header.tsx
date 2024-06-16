@@ -29,7 +29,7 @@ export default function Header(): JSX.Element {
           a spark of inspiration. Will these pieces inspire you? Visit us and
           find out.
         </p>
-        <Button>Our location</Button>
+        <Button to='location'>Our location</Button>
       </div>
     </header>
   );
