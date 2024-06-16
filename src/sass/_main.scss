@@ -1,0 +1,253 @@
+.main 
+{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: .88rem;
+    padding: 0 4.2%;
+    &__img
+    {
+        &-1
+        {
+            &-mobile, &-desktop
+            {
+                display: none;
+                object-fit: cover;
+                width: 100%;
+            }
+
+            &-tablet 
+            {
+                display: block;
+                width: 100%;
+                grid-row: 1 / 2;
+                justify-self: end;
+                margin-left: auto;
+                object-fit: cover;
+            }
+        }
+
+        &-2
+        {
+            &-tablet, &-desktop
+            {
+                display: none;
+                object-fit: cover;
+                width: 100%;
+            }
+
+            &-mobile
+            {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-3
+        {
+            &-tablet, &-desktop
+            {
+                display: none;
+                object-fit: cover;
+                width: 100%;
+            }
+
+            &-mobile
+            {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__title 
+    {
+        font-size: 2.77rem;
+        margin-bottom: 1.16rem;
+    }
+
+    &__cnt-1 
+    {
+        padding: .5rem 0 .888rem;
+    }
+
+    &__cnt-2 
+    {
+        background-color: $color-Black;
+        color: $color-White;
+        padding: 2.6rem 1.33rem;
+
+        & .main__body 
+        {
+            color: $color-White;
+        }
+    }
+}
+
+
+@media (min-width: 768px)
+{
+    .main 
+    {
+        grid-template-columns: 57% 40.6%;
+        grid-template-rows: 400px 313px 377px;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: .61rem;
+        column-gap: .61rem;
+        padding: 0 5.2%;
+
+        &__title
+        {
+            font-size: 2.77rem;
+        }
+
+        &__cnt-1
+        {
+            grid-column: 1 / 2;
+            grid-row: 1/ 2;
+            max-width: 223px;
+            padding: 2rem 0  3.6rem;
+        }
+
+        &__img 
+        {
+            &-1 
+            {
+                &-mobile 
+                {
+                    display: none;
+                }
+
+                &-tablet {
+                    grid-column:  1 / -1;
+                    grid-row: 1/ 2;
+                    display: block;
+                    width: 57.7%;
+                    height: 100%;
+                }
+            }
+
+            &-2 
+            {
+                &-mobile
+                {
+                    display: none;
+                }
+
+                &-tablet 
+                {
+                    display: block;
+                    height: 100%;
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 4;
+                }
+            }
+
+
+            &-3 
+            {
+                &-mobile
+                {
+                    display: none;
+                }
+
+                &-tablet 
+                {
+                    display: block;
+                    height: 100%;
+                    grid-column: 2 / -1;
+                    grid-row: 2 / 3;
+                }
+            }
+        }
+
+        &__cnt-2 
+        {
+            grid-column: 2 / -1;
+            grid-row: 3 / 4;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: 0 1.61rem;
+        }
+    }
+}
+
+
+@media (min-width: 1440px)
+{
+    .main 
+    {
+
+        row-gap: .5rem;
+        column-gap: .5rem;
+        grid-template-columns: 57.7% 40.6%;
+     
+        &__title
+        {
+            font-size: 2.72rem;
+        }
+
+        &__cnt-1 
+        {
+            max-width: 350px;
+        }
+        
+        &__img 
+        {
+            &-1 
+            {
+                &-tablet 
+                {
+                    display: none;
+                }
+
+                &-desktop {
+                    grid-column:  1 / -1;
+                    grid-row: 1/ 2;
+                    display: block;
+                    width: 57%;
+                    height: 100%;
+                    justify-self: end;
+                }
+            }
+
+            &-2 
+            {
+                &-tablet
+                {
+                    display: none;
+                }
+
+                &-desktop 
+                {
+                    display: block;
+                    height: 100%;
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 4;
+                }
+            }
+
+
+            &-3 
+            {
+                &-tablet
+                {
+                    display: none;
+                }
+
+                &-desktop 
+                {
+                    display: block;
+                    height: 100%;
+                    grid-column: 2 / -1;
+                    grid-row: 2 / 3;
+                }
+            }
+        }
+    }
+}
