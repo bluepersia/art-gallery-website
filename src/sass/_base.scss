@@ -1,0 +1,28 @@
+
+$color-Black: #151515;
+$color-White: white;
+$color-Gold: #D5966C;
+$color-DarkGrey: #444444;
+
+body 
+{
+    font-family: "Big Shoulders Display", sans-serif;;
+}
+
+
+p {
+    font-family: "Outfit", sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}
