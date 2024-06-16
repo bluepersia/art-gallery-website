@@ -1,0 +1,170 @@
+
+
+.header 
+{
+    &__title
+    {
+        &-desktop
+        {
+            display: none;
+        }
+
+        &-mobile
+        {
+            font-size: 3.33rem;
+        }
+    }
+
+    &__img 
+    {
+        &-tablet, &-desktop
+        {
+            display: none;
+        }
+
+        &-mobile
+        {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__content 
+    {
+        padding: 1.77rem 4.2%;
+    }
+}
+
+
+
+@media (min-width: 768px)
+{
+    .header
+     {
+        display: grid;
+        grid-template-columns: 56.9% auto;
+        align-items: center;
+
+        &__title-mobile
+        {
+            font-size: 3.88rem;
+        }
+
+        &__img 
+        {
+            &-mobile
+            {
+                display: none;
+            }
+
+            &-tablet {
+                display: block;
+                width: 100%;
+                grid-column: 1/  2;
+                grid-row: 1/ 2;
+            }
+        }
+        &__content 
+        {
+            grid-row:  1/ 2;
+            grid-column: 1 / -1;
+            justify-self: end;
+            max-width: 370px;
+            padding: 0;
+            margin-right: 5.2%;
+        }
+     }
+}
+
+
+@media (min-width: 1440px)
+{
+    .header
+    {
+        grid-template-columns: 31.25% 37.5% auto;
+        grid-template-rows: auto;
+        align-items: start;
+
+        &__title 
+        {
+            &-mobile 
+            {
+                display: none;
+            }
+
+            &-desktop {
+                display: block;
+                color: $color-White;
+                font-size: 4.36rem;
+                grid-column: 1 / 3;
+                grid-row: 1/ 2;
+                margin-left: 11.4%;
+                margin-top: 8.6rem;
+                z-index: 99;
+
+                & .e, & .r , & .y  
+                {
+                   color:$color-Black;
+                }
+
+                @media (min-width:1500px)
+                {
+                    .e 
+                    {
+                        color:$color-White;
+                    }
+                }
+                @media (min-width:1670px)
+                {
+                    .r 
+                    {
+                        color:$color-White;
+                    }
+                }
+                @media (min-width:1790px)
+                {
+                    .y
+                    {
+                        color:$color-White;
+                    }
+                }
+            }
+        }
+
+        &__black-region 
+        {
+            width: 100%;
+            height: 100%;
+            background-color: $color-Black;
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
+
+        &__img{
+
+            &-tablet 
+            {
+                display: none;
+            }
+
+            &-desktop
+             {
+                display: block;
+                width: 100%;
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+             }
+        }
+
+        &__content 
+        {
+            grid-column: 2 / -1;
+            margin-top: 8.6rem;
+            padding: 0;
+            margin-right: 11.4%;
+            max-width: 350px;
+        }
+    }
+
+    
+}
