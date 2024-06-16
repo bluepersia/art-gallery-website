@@ -185,6 +185,7 @@ html {
   grid-template-columns: auto;
   row-gap: 0.88rem;
   padding: 0 4.2%;
+  margin-bottom: 6.66rem;
 }
 .main__img-1-mobile, .main__img-1-desktop {
   display: none;
@@ -298,6 +299,7 @@ html {
     row-gap: 0.5rem;
     column-gap: 0.5rem;
     grid-template-columns: 57.7% 40.6%;
+    margin-bottom: 8.1rem;
   }
   .main__title {
     font-size: 2.72rem;
